@@ -1,11 +1,10 @@
-const repoName = window.location.href.match(/github\.io\/([^/]+)/)?.[1] || "";
-const repoBase = `https://nikodimose.github.io/${repoName}`;
+const repoRoot = new URL("../../", window.location.href).href;
 
 const navItems = [
-  { name: "Home", url: `${repoBase}/index.html` },
-  { name: "Warning Signs", url: `${repoBase}/pages/warning.html` },
-  { name: "Regulatory Signs", url: `${repoBase}/pages/regulatory.html` },
-  { name: "Information Signs", url: `${repoBase}/pages/information.html` },
+  { name: "Home", url: new URL("index.html", repoRoot).href },
+  { name: "Warning Signs", url: new URL("pages/warning.html", repoRoot).href },
+  { name: "Regulatory Signs", url: new URL("pages/regulatory.html", repoRoot).href },
+  { name: "Information Signs", url: new URL("pages/information.html", repoRoot).href },
 ];
 
 function buildNav() {
