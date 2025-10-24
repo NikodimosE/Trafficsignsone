@@ -1,9 +1,9 @@
 // scripts/nav.js
 const navItems = [
-  { name: "Home", url: "/index.html" },
-  { name: "Warning Signs", url: "/pages/warning.html" },
-  { name: "Regulatory Signs", url: "/pages/regulatory.html" },
-  { name: "Information Signs", url: "/pages/information.html" },
+  { name: "Home", url: "index.html" },
+  { name: "Warning Signs", url: "pages/warning.html" },
+  { name: "Regulatory Signs", url: "pages/regulatory.html" },
+  { name: "Information Signs", url: "pages/information.html" },
 ];
 
 function buildNav() {
