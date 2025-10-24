@@ -1,11 +1,11 @@
-const repoRoot = new URL("../../", window.location.href).href;
+const prefix = location.href.includes("/pages/") ? "/Trafficsignsone/" : "";
 
 const navItems = [
-  { name: "Home", url: "/" },
-  { name: "Warning Signs", url: "/Trafficsignsone/pages/warning.html" },
-  { name: "Regulatory Signs", url: "/Trafficsignsone/pages/regulatory.html" },
-  { name: "Information Signs", url: "/Trafficsignsone/pages/information.html" },
+  { name: "Home", url: `${prefix}index.html` },
+  { name: "Warning Signs", url: `${prefix}pages/warning.html` },
+  ...
 ];
+
 
 
 function buildNav() {
@@ -32,4 +32,5 @@ function buildNav() {
 }
 
 document.addEventListener("DOMContentLoaded", buildNav);
+
 
