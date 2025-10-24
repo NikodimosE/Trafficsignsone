@@ -1,11 +1,12 @@
 const repoRoot = new URL("../../", window.location.href).href;
 
 const navItems = [
-  { name: "Home", url: new URL("index.html", repoRoot).href },
-  { name: "Warning Signs", url: new URL("pages/warning.html", repoRoot).href },
-  { name: "Regulatory Signs", url: new URL("pages/regulatory.html", repoRoot).href },
-  { name: "Information Signs", url: new URL("pages/information.html", repoRoot).href },
+  { name: "Home", url: "/" },
+  { name: "Warning Signs", url: "/Trafficsignsone/pages/warning.html" },
+  { name: "Regulatory Signs", url: "/Trafficsignsone/pages/regulatory.html" },
+  { name: "Information Signs", url: "/Trafficsignsone/pages/information.html" },
 ];
+
 
 function buildNav() {
   const nav = document.createElement("nav");
@@ -31,3 +32,4 @@ function buildNav() {
 }
 
 document.addEventListener("DOMContentLoaded", buildNav);
+
