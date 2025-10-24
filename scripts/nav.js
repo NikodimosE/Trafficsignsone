@@ -1,7 +1,7 @@
 const prefix = location.href.includes("/pages/") ? "/Trafficsignsone/" : "";
 
 const navItems = [
-  { name: "Home", url: `${prefix}index.html` },
+  { name: "Home", url: "/Trafficsignsone/index.html" }
   { name: "Warning Signs", url: `${prefix}pages/warning.html` },
   ...
 ];
@@ -32,5 +32,6 @@ function buildNav() {
 }
 
 document.addEventListener("DOMContentLoaded", buildNav);
+
 
 
