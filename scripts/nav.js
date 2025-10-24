@@ -1,5 +1,5 @@
 // scripts/nav.js
-const repoBase = window.location.origin + "/" + window.location.pathname.split("/")[1];
+const repoBase = "https://nikodimose.github.io/Trafficsignsone";
 
 const navItems = [
   { name: "Home", url: `${repoBase}/index.html` },
@@ -7,6 +7,7 @@ const navItems = [
   { name: "Regulatory Signs", url: `${repoBase}/pages/regulatory.html` },
   { name: "Information Signs", url: `${repoBase}/pages/information.html` },
 ];
+
 
 
 function buildNav() {
@@ -35,5 +36,6 @@ function buildNav() {
 document.addEventListener("DOMContentLoaded", buildNav);
 
 // JavaScript Document
+
 
 
