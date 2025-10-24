@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  display: flex;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #E31837;
+  padding: 1rem;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 1rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+main {
+  margin-left: 220px; /* Leaves space for sidebar */
+  padding: 2rem;
+}
+
+header, footer {
+  margin-left: 220px; /* Aligns with main content */
+  padding: 1rem 2rem;
+}
+
+header, main, footer {
+  padding: 2rem;
+}
+
+.content {
+  flex: 1;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
