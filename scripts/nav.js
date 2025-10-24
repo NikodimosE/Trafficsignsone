@@ -1,22 +1,22 @@
 // scripts/nav.js
+const repoBase = "/" + window.location.pathname.split("/")[1];
+
 const navItems = [
-  { name: "Home", url: "index.html" },
-  { name: "Warning Signs", url: "pages/warning.html" },
-  { name: "Regulatory Signs", url: "pages/regulatory.html" },
-  { name: "Information Signs", url: "pages/information.html" },
+  { name: "Home", url: `${repoBase}/index.html` },
+  { name: "Warning Signs", url: `${repoBase}/pages/warning.html` },
+  { name: "Regulatory Signs", url: `${repoBase}/pages/regulatory.html` },
+  { name: "Information Signs", url: `${repoBase}/pages/information.html` },
 ];
 
 function buildNav() {
   const nav = document.createElement("nav");
   nav.classList.add("sidebar");
 
-  // Add site title
   const title = document.createElement("h2");
   title.textContent = "Traffic Signs in the Isle of Man";
   title.classList.add("site-title");
   nav.appendChild(title);
 
-  // Add nav links
   const ul = document.createElement("ul");
   navItems.forEach(item => {
     const li = document.createElement("li");
@@ -28,8 +28,10 @@ function buildNav() {
   });
 
   nav.appendChild(ul);
-  document.body.prepend(nav); // Insert before main content
+  document.body.prepend(nav);
 }
 
 document.addEventListener("DOMContentLoaded", buildNav);
+
 // JavaScript Document
+
