@@ -1,0 +1,132 @@
+
+
+.signs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  align-items: end; /* aligns all grid items to bottom */
+}
+
+.sign-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 240px;
+  text-align: center;
+  margin: 12px;
+  max-width: 100%;
+}
+
+
+.sign-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.sign-caption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  word-wrap: break-word;
+  max-width: 160px; /* match minmax(160px, 1fr) from .signs-grid */
+  white-space: normal;
+}
+
+
+.sign-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.sign-caption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.section-break {
+  height: 2px;
+  background-color: #ccc;
+  margin: 2rem auto;
+  width: 80%;
+}
+
+.sign-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+
+.sign-section h2 {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+
+
+#section-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px; /* spacing between sign groups */
+}
+
+#section-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px; /* spacing between sign groups */
+}
+
+#section-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px; /* spacing between sign groups */
+}
+
+#section-4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px; /* spacing between sign groups */
+}
+
+#section-5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px; /* spacing between sign groups */
+}
+
+#section-6 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px; /* spacing between sign groups */
+}
+
+#section-8 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px; /* spacing between sign groups */
+}
+
+p {
+  text-align: center;
+}

@@ -1,0 +1,118 @@
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh; /* ← fixes height issue */
+  background: #f8f8f8;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar:not(.collapsed) {
+  transform: translateX(0);
+}
+
+
+.site-title {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-weight: 600;
+  color: black;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  line-height: 1.2;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 1rem;
+}
+
+.sidebar a {
+  display: block;
+  padding: 0.75rem 1rem;
+  background-color: #ffffff;
+  border-radius: 6px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.sidebar a:hover {
+  background-color: #C6D6FF;
+  transform: translateX(4px);
+}
+#navToggle {
+  font-size: 24px;
+  background: #003366;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 1001;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.sidebar a.active {
+  background-color: #003366;
+  color: #fff;
+  font-weight: bold;
+}
+.sidebar hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1.5rem 0;
+}
+
+#navToggle {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  width: 40px;
+  height: 40px;
+  background: #003366;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  z-index: 1001;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#navToggle .bar {
+  width: 24px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+}
+
+/* Animate when sidebar is open */
+body.sidebar-open #navToggle {
+  transform: scale(0.6) rotate(180deg);
+  opacity: 0;
+}
+
+body.sidebar-open #navToggle .bar {
+  transform: rotate(90deg) scale(0.5);
+  opacity: 0;
+}

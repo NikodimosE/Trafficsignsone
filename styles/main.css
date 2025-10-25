@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  display: flex;
+  font-family: sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+main {
+  padding: 2rem;
+}
+
+header, footer {
+  padding: 1rem 2rem;
+}
+
+header, main, footer {
+  padding: 2rem;
+}
+
+.site-title {
+  font-size: clamp(1.2rem, 5vw, 2.5rem);
+  line-height: 1.2;
+  margin: 0;
+  text-align: center;
+  white-space: normal;         /* allow wrapping */
+  overflow: visible;           /* no clipping */
+  text-overflow: unset;        /* no ellipsis */
+}
+
+
